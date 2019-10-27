@@ -1,0 +1,23 @@
+body {
+  background-color: whitesmoke;
+}
+header {
+  background-color: lightcoral;
+  color: aquamarine;
+  text-align: center;
+}
+form {
+  float: right;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+button {
+  background-color: lightcoral;
+  color: aquamarine;
+  margin: 0.5%;
+}
+#submitBtn {
+  background-color: lightcoral;
+  color: aquamarine;
+}
