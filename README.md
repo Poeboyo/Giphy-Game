@@ -14,4 +14,4 @@ Prevent default for on click
 
 Adding Attributes to make the src attribute added to each button on click to the first 10 results from the Giphy API
 
-They are then appended to a DIV on the page
+They are then appended to a DIV on the page accompanied by its rating
