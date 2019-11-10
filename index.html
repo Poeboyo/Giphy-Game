@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Giphy Generator</title>
+  <title>Giphy Gizmo</title>
   <link rel="stylesheet" href="assets/css/style.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -10,13 +10,14 @@
 
 <body>
   <header>
-    <h1>Giphy API Caller</h1>
+    <img src="assets/css/images/header.png" class="header">
+    <form id="buttonForm">
+      <input type="text" id="inputSearch">
+      <input type="submit" value="Add Giphy Selection" id="submitBtn">
+    </form>
   </header>
 
-  <form id="buttonForm">
-    <input type="text" id="inputSearch">
-    <input type="submit" value="Add Giphy Selection" id="submitBtn">
-  </form>
+
   <div id="buttonDisplay"></div>
   <!--Create a form to hold User Input -->
 

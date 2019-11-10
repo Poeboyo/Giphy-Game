@@ -29,7 +29,7 @@ function displayGif() {
     // After data comes back from the request
     .then(function(response) {
       var result = response.data;
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 9; i++) {
         var gifImageTag = $("<img>");
         gifImageTag.attr("src", result[i].images.fixed_height_still.url);
         gifImageTag.attr("src", result[i].images.fixed_height.url);

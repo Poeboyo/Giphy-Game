@@ -1,11 +1,11 @@
 body {
-  background-color: whitesmoke;
+  background-color: black;
+  color: #ffffff;
 }
-header {
-  background-color: lightcoral;
-  color: aquamarine;
-  text-align: center;
+.header {
+  width: fit-content;
 }
+
 form {
   float: right;
   margin-top: 3%;
@@ -13,11 +13,32 @@ form {
 }
 
 button {
-  background-color: lightcoral;
-  color: aquamarine;
+  background-color: #302244;
+  border: 3px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+  color: #ffffff;
   margin: 0.5%;
 }
 #submitBtn {
-  background-color: lightcoral;
-  color: aquamarine;
+  background-color: #302244;
+  border: 3px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+  color: #ffffff;
+  margin-top: 12%;
 }
