@@ -1,17 +1,52 @@
 # Giphy-Game
 
-Create a form to hold User Input
+A Website that displays Gif apps, as they are called from the Giphy API.
 
-On click handler to add button to buttons array
+## How it's Made
 
-Make sure the value correlates to a gif search when pressed, also containing the rating of each gif
+- A Search Bar and Pre-defined Buttons are visible upon entering the page,
+- Upon hitting Enter after inputting something you'd like to see as a Gif, it will be created as a clickable button
 
-Make a for loop to create buttons for every pre-dtermined button that appears in a div
+```javascript
+$("#submitBtn").on("click", function(event) {
+  event.preventDefault();
+  var buttonItem = $("#inputSearch")
+    .val()
+    .trim();
+  if (buttonItem == "") {
+    alert("Please Input a Word before Submitting");
+    return false;
+  } else {
+    buttonArray.push(buttonItem);
+    $("#inputSearch").val("");
+  }
 
-Give each Button a data type
+  renderButtons();
+});
+```
 
-Prevent default for on click
+- The API upon clicking one of these specified buttons, will then make a call to the Giphy API with the buttons content as the search and returns the first ten responses from that call and applies them to a DIV present on the page.
 
-Adding Attributes to make the src attribute added to each button on click to the first 10 results from the Giphy API
+```javascript
+var gifImageTag = $("<img>");
+gifImageTag.attr("src", result[i].images.fixed_height_still.url);
+gifImageTag.attr("src", result[i].images.fixed_height.url);
 
-They are then appended to a DIV on the page accompanied by its rating
+var paragragh = $("<pre>");
+paragragh.text(`Rating: ${result[i].rating}`);
+
+$("#gifDisplay").prepend(gifImageTag);
+$("#gifDisplay").prepend(paragragh);
+```
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- Giphy API
+
+## Difficulties and Learning
+
+- The only difficulty and learning to this project at the time were using APIs for the first time and understanding their functionality and how to retrieve only the data you wanted from the response.
